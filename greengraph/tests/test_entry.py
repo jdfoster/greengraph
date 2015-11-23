@@ -25,7 +25,8 @@ def test_parse_args_fail():
             test_args = [item if item else '' for item in test_args]
             with patch.object(sys, 'argv', test_args):
                 with assert_raises(SystemExit) as exception:
-                    entry_point()
+                    with capture_sys_output () as (stdout, stderr):
+                        entry_point()
 
 def test_parse_args_negative_steps_fail():
     # Testing entry_point function using random interger below 3 as step value
@@ -40,7 +41,8 @@ def test_parse_args_negative_steps_fail():
             test_args.append(str(step_value))
             with patch.object(sys, 'argv', test_args):
                 with assert_raises(SystemExit) as exception:
-                    entry_point()
+                    with capture_sys_output () as (stdout, stderr):
+                        entry_point()
 
 def test_parse_args_float_steps_fail():
     # Testing entry_point function using random float as step value
@@ -55,4 +57,5 @@ def test_parse_args_float_steps_fail():
             test_args.append(str(step_value))
             with patch.object(sys, 'argv', test_args):
                 with assert_raises(SystemExit) as exception:
-                    entry_point()
+                    with capture_sys_output () as (stdout, stderr):
+                        entry_point()
