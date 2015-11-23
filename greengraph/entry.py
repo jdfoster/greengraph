@@ -1,5 +1,6 @@
 from argparse import ArgumentParser, Action
-#import greengraph.Greengraph
+from greengraph import Greengraph
+from matplotlib import pyplot as plt
 
 def entry_point():
     parser = ArgumentParser()
@@ -21,7 +22,11 @@ def entry_point():
     if not arguments.dist_file.lower().endswith('.png'):
         parser.error('OUT argument: ' +  arguments.dist_file + ', lacks the .png extension.')
 
-    print arguments.from_arg, arguments.to_arg, arguments.dist_file, arguments.steps
+    mygraph = Greengraph(arguments.from_arg, arguments.to_arg)
+    data = mygraph.green_between(arguments.steps)
+    plot, plot_axes = plt.subplots()
+    plot_axes.plot(data)
+    plot.savefig(arguments.dist_file)
 
 if __name__ == "__main__":
     entry_point()
