@@ -1,0 +1,3 @@
+#!/usr/bin/env python2
+from greengraph.entry import entry_point
+entry_point()

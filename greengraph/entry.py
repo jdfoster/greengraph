@@ -1,4 +1,3 @@
-#!/usr/bin/env python2
 from argparse import ArgumentParser, Action
 #import greengraph.Greengraph
 
