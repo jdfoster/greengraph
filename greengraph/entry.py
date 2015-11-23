@@ -16,8 +16,8 @@ def entry_point():
         if len(arg) < arg_len:
             parser.error(arg_name + ' argument: ' + arg + ', is too short.')
 
-    if arguments.steps < 3:
-        parser.error('STEPS argument is below 3.')
+    if arguments.steps < 2:
+        parser.error('STEPS argument is below 2.')
 
     if not arguments.dist_file.lower().endswith('.png'):
         parser.error('OUT argument: ' +  arguments.dist_file + ', lacks the .png extension.')

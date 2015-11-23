@@ -33,7 +33,7 @@ def test_parse_args_negative_steps_fail():
     with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'entry_point_passes.yaml')) as fixures_file:
         fixtures = yaml.load(fixures_file)
         fixture = fixtures[0]
-        step_values = randint(-20, 3, 10)
+        step_values = randint(-20, 2, 200)
         for step_value in step_values:
             test_args = [fixture['program'], fixture['from'], fixture['to'], fixture['out']]
             switch = choice(['--steps', '-s'])
@@ -49,7 +49,7 @@ def test_parse_args_float_steps_fail():
     with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'entry_point_passes.yaml')) as fixures_file:
         fixtures = yaml.load(fixures_file)
         fixture = fixtures[0]
-        step_values = random(10)*100
+        step_values = random(200)*100
         for step_value in step_values:
             test_args = [fixture['program'], fixture['from'], fixture['to'], fixture['out']]
             switch = choice(['--steps', '-s'])
