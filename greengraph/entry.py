@@ -2,6 +2,7 @@ from argparse import ArgumentParser, Action
 from greengraph import Greengraph
 from matplotlib import pyplot as plt
 
+
 def entry_point():
     parser = ArgumentParser()
     parser.add_argument('from_arg', metavar='FROM', type=str)
@@ -28,5 +29,6 @@ def entry_point():
     plot_axes.plot(data)
     plot.savefig(arguments.dist_file)
 
+    
 if __name__ == "__main__":
     entry_point()
