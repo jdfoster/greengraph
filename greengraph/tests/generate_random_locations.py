@@ -32,14 +32,20 @@ def random_coordinate_generator():
     return (latitude, longitude)
 
 
+def random_step_generator():
+    return np.random.randint(2, 40)
+
+
 def save_random_place_names(num_names=40):
     output_file = "random_locations.yaml"
     place_names_fixture = []
     for _ in range(num_names):
         random_place = random_place_name_generator()
         random_location = random_coordinate_generator()
+        random_step = random_step_generator()
         place_names_fixture.append({'name': random_place,
-                                    'location': random_location})
+                                    'location': random_location,
+                                    'steps': random_step})
     with open(os.path.join(os.path.dirname(__file__),
                            'fixtures', output_file), 'w') as target:
         target.write(yaml.dump(place_names_fixture))

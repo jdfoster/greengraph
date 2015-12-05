@@ -9,6 +9,8 @@ class Greengraph(object):
             raise TypeError('Geographical locations need given as strings')
         if (len(start) < 2) | (len(end) < 2):
             raise TypeError('Locations need to be two characters or more')
+        if start.lower() == end.lower():
+            raise NotImplementedError('Identical names for locations not implemented')
         self.start = start
         self.end = end
         self.geocoder = geopy.geocoders.GoogleV3(domain="maps.google.co.uk")
