@@ -1,11 +1,10 @@
 import os
 import yaml
 import mock
-from nose.tools import assert_raises, assert_equals
+from nose.tools import assert_raises
 import geopy
 import numpy as np
 from ..greengraph import Greengraph
-from .generate_random_locations import random_coordinate_generator, random_step_generator
 
 
 def test_greengraph_init_type_fail():
@@ -53,3 +52,13 @@ def test_greengraph_geolocate_fail():
                 Greengraph('first', 'second').geolocate(test_name)
                 mock_geocoder.assert_any_call(test_name, exactly_one=False)
 
+
+def test_greengraph_location_sequence_type_fail():
+    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'random_coordinate_pairs.yaml')) as fixtures_file:
+        fixtures = yaml.load(fixtures_file)
+        for fixture in fixtures:
+            start = fixture['start']
+            end = fixture['end']
+            steps = fixture['steps']
+            with assert_raises(TypeError) as exception:
+                Greengraph('first', 'second').location_sequence(start, end, steps)
