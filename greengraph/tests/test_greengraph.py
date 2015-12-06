@@ -8,7 +8,7 @@ from ..greengraph import Greengraph
 
 
 def test_greengraph_init_type_fail():
-    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'greengraph_fails.yaml')) as fixutres_file:
+    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'broken_location_pair.yaml')) as fixutres_file:
         fixtures = yaml.load(fixutres_file)
         for fixture in fixtures:
             test_locations = [fixture['from'], fixture['to']]
@@ -18,7 +18,7 @@ def test_greengraph_init_type_fail():
 
 
 def test_greengraph_init_implementation_fail():
-    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'random_locations.yaml')) as fixutres_file:
+    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'random_coordinate_single.yaml')) as fixutres_file:
         fixtures = yaml.load(fixutres_file)
         for fixture in fixtures:
             test_locations = [fixture['name'], fixture['name']]
@@ -28,7 +28,7 @@ def test_greengraph_init_implementation_fail():
 
 
 def test_greengraph_geolocate_pass():
-    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'random_locations.yaml')) as fixtures_file:
+    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'random_coordinate_single.yaml')) as fixtures_file:
         fixtures = yaml.load(fixtures_file)
         for fixture in fixtures:
             test_name = fixture['name']
@@ -40,8 +40,8 @@ def test_greengraph_geolocate_pass():
                 mock_geocoder.assert_any_call(test_name, exactly_one=False)
 
 
-def test_greengraph_geolocate_fail():
-    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'random_locations.yaml')) as fixtures_file:
+def test_greengraph_geolocate_notfound():
+    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'random_coordinate_single.yaml')) as fixtures_file:
         fixtures = yaml.load(fixtures_file)
         for fixture in fixtures:
             test_name = fixture['name']
@@ -54,7 +54,7 @@ def test_greengraph_geolocate_fail():
 
 
 def test_greengraph_location_sequence_type_fail():
-    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'random_coordinate_pairs.yaml')) as fixtures_file:
+    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'broken_coordinate_pairs.yaml')) as fixtures_file:
         fixtures = yaml.load(fixtures_file)
         for fixture in fixtures:
             start = fixture['start']
