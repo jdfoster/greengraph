@@ -1,7 +1,7 @@
 import os
 import yaml
 import mock
-from nose.tools import assert_raises
+from nose.tools import assert_raises, assert_almost_equal, assert_equal
 import geopy
 import numpy as np
 from ..greengraph import Greengraph
@@ -62,3 +62,23 @@ def test_greengraph_location_sequence_type_fail():
             steps = fixture['steps']
             with assert_raises(TypeError) as exception:
                 Greengraph('first', 'second').location_sequence(start, end, steps)
+
+
+def test_greengraph_location_sequence_diff():
+    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'random_coordinate_single.yaml')) as fixtures_file:
+        fixtures = yaml.load(fixtures_file)
+        for fixture in fixtures:
+            start = fixture['location']
+            delta = (np.random.uniform(1, 40), np.random.uniform(1, 40))
+            end = (start[0]+delta[0], start[1]+delta[1])
+            steps = fixture['steps']
+            test_array = Greengraph('first', 'second').location_sequence(start, end, steps)
+            tp_test_array = test_array.transpose()
+            first_array = tp_test_array[0]
+            second_array = tp_test_array[1]
+            len_array = np.mean([len(first_array), len(second_array)])
+            first_diff_sum = sum(np.diff(first_array))
+            second_diff_sum = sum(np.diff(second_array))
+            assert_almost_equal(first_diff_sum, delta[0])
+            assert_almost_equal(second_diff_sum, delta[1])
+            assert_equal(len_array, steps)
