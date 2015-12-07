@@ -23,7 +23,7 @@ def capture_sys_output():
 def test_entry_point():
     with open(os.path.join(
             os.path.dirname(__file__), 'fixtures',
-            'broken_location_pairs_plus_png.yaml')) as fixtures_file:
+            'broken_locations_pairs_plus_png.yaml')) as fixtures_file:
         fixtures = yaml.load(fixtures_file)
         for fixture in fixtures:
             test_args = ['greengraph_prog', fixture['from'],

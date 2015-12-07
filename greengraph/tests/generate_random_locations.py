@@ -51,8 +51,8 @@ def broken_png_name():
 
 
 def random_coordinate_generator():
-    latitude = np.random.uniform(-1, 1)*180
-    longitude = np.random.uniform(-1, 1)*180
+    latitude = np.random.uniform(-89.5, 89.5)
+    longitude = np.random.uniform(-179.5, 179.5)
     return (latitude, longitude)
 
 
@@ -125,22 +125,26 @@ def save_broken_place_names_pairs(size=80):
         target.write(yaml.dump(place_names_fixture))
 
 
-def save_random_coordinate_single(size=80):
-    output_file = "random_coordinate_single.yaml"
+def save_random_coordinate_pairs(size=80):
+    output_file = "random_coordinate_pairs.yaml"
     place_names_fixture = []
     for _ in range(size):
-        random_place = random_place_name_generator()
-        random_location = random_coordinate_generator()
+        random_places = [random_place_name_generator(),
+                        random_place_name_generator()]
+        random_locations = [random_coordinate_generator(),
+                           random_coordinate_generator()]
         steps = random_step_generator()
-        place_names_fixture.append({'name': random_place,
-                                    'location': random_location,
+        place_names_fixture.append({'start_nom': random_places[0],
+                                    'end_nom': random_places[1],
+                                    'start_loc': random_locations[0],
+                                    'end_loc': random_locations[1],
                                     'steps': steps})
     with open(os.path.join(os.path.dirname(__file__),
                            'fixtures', output_file), 'w') as target:
         target.write(yaml.dump(place_names_fixture))
 
 
-def save_random_coordinate_pairs(size=80):
+def save_broken_coordinate_pairs(size=80):
     output_file = "broken_coordinate_pairs.yaml"
     coordinate_fixture = []
     for _ in range(size):

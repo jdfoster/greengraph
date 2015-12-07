@@ -37,6 +37,8 @@ class Greengraph(object):
         return np.vstack([lats, longs]).transpose()
 
     def green_between(self, steps):
+        if not (isinstance(steps, int) & (steps > 1)):
+            raise TypeError('Step value needs to be an interger and greater than 1')
         return [map.Map(*location).count_green()
                 for location in self.location_sequence(
                         self.geolocate(self.start),
