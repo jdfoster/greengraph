@@ -1,0 +1,400 @@
+- coordinate: !!python/tuple [61.00434859191313, 10.473680596967341]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [499, 583]
+  zoom: 184.0
+- coordinate: !!python/tuple [17.38486876842086, -14.927384065464565]
+  satellite: 'True'
+  sensor: true
+  size: !!python/tuple [122, 167]
+  zoom: 68
+- coordinate: !!python/tuple [51, 23.827701927209688]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [785, 765]
+  zoom: 4
+- coordinate: !!python/tuple [-45.57413851418794, -26.840913408073618]
+  satellite: 'True'
+  sensor: false
+  size: !!python/tuple [557, 704]
+  zoom: 186
+- coordinate: !!python/tuple [-24.90082575818593, -35.08799451871553]
+  satellite: true
+  sensor: true
+  size: !!python/tuple [500.0, 579]
+  zoom: 171
+- coordinate: !!python/tuple [-78.1677238345498, 143.66455650680786]
+  satellite: 'True'
+  sensor: false
+  size: !!python/tuple [530, 148]
+  zoom: 106
+- coordinate: !!python/tuple [-54.58355604380264, -5.112571554057979]
+  satellite: true
+  sensor: false
+  size: !!python/tuple ['437', 322]
+  zoom: 59
+- coordinate: !!python/tuple [31.95993338195916, 89.53405309335795]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [27, 476]
+  zoom: 80.0
+- coordinate: !!python/tuple [-13.42085882357523, 66.73674402467688]
+  satellite: 'False'
+  sensor: false
+  size: !!python/tuple [48, 795]
+  zoom: 171
+- coordinate: !!python/tuple [48.617526325465604, -6.589198352886086]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [620, 615]
+  zoom: -117
+- coordinate: !!python/tuple [84.75249915947231, 4.616605763953032]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [-661, 472]
+  zoom: 56
+- coordinate: !!python/tuple [35.52173672605322, -103.59858216700772]
+  satellite: false
+  sensor: true
+  size: !!python/tuple ['442', 449]
+  zoom: 6
+- coordinate: !!python/tuple [32.902816460780485, -106.21720887819848]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [51, 42]
+  zoom: -185
+- coordinate: !!python/tuple [69.29450305990238, 125.99744091014213]
+  satellite: 'False'
+  sensor: false
+  size: !!python/tuple [528, 534]
+  zoom: 149
+- coordinate: !!python/tuple [-37.68740019981288, -99.6337923841884]
+  satellite: true
+  sensor: true
+  size: !!python/tuple [-445, 196]
+  zoom: 151
+- coordinate: !!python/tuple [33.27252951933907, -53.521267607956034]
+  satellite: false
+  sensor: false
+  size: !!python/tuple ['695', 670]
+  zoom: 153
+- coordinate: !!python/tuple [12.574234847483936, -126.39169339339111]
+  satellite: 'False'
+  sensor: false
+  size: !!python/tuple [169, 107]
+  zoom: 197
+- coordinate: !!python/tuple [-49, 27.62944393336798]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [202, 400]
+  zoom: 65
+- coordinate: !!python/tuple [28.588373800611492, 140.81862321836792]
+  satellite: 'True'
+  sensor: false
+  size: !!python/tuple [259, 309]
+  zoom: 13
+- coordinate: !!python/tuple [86.94155153468657, -15.43407091925991]
+  satellite: false
+  sensor: false
+  size: !!python/tuple ['70', 562]
+  zoom: 5
+- coordinate: !!python/tuple [-51.424956343363604, -116.68266672257047]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [110.0, 641]
+  zoom: 105
+- coordinate: !!python/tuple [-85.04417023302959, -129.35366757685102]
+  satellite: 'False'
+  sensor: false
+  size: !!python/tuple [12, 610]
+  zoom: 163
+- coordinate: !!python/tuple ['-59.4024452014', 112.23381284252127]
+  satellite: true
+  sensor: true
+  size: !!python/tuple [646, 765]
+  zoom: 146
+- coordinate: !!python/tuple [25.009886800531547, -72.763823155196]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [492, 242]
+  zoom: -13
+- coordinate: !!python/tuple [-9.083986274943399, -118.90764543025563]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [154, 304]
+  zoom: '37'
+- coordinate: !!python/tuple [7.791914861075313, 156.135312083443]
+  satellite: 'False'
+  sensor: false
+  size: !!python/tuple [611, 232]
+  zoom: 139
+- coordinate: !!python/tuple ['22.9461386109', 163.149942142513]
+  satellite: false
+  sensor: false
+  size: !!python/tuple [377, 69]
+  zoom: 155
+- coordinate: !!python/tuple [-36.131836449874385, -177.01419522897902]
+  satellite: false
+  sensor: false
+  size: !!python/tuple [-564, 706]
+  zoom: 145
+- coordinate: !!python/tuple [72.07337880629333, 23.611946116171424]
+  satellite: false
+  sensor: false
+  size: !!python/tuple [63, 794]
+  zoom: 108.0
+- coordinate: !!python/tuple [-29.127484100365635, -70.99879587817128]
+  satellite: 'False'
+  sensor: true
+  size: !!python/tuple [163, 118]
+  zoom: 171
+- coordinate: !!python/tuple [-13.170335605352832, 27.941814557653714]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [-261, 381]
+  zoom: 138
+- coordinate: !!python/tuple ['-43.454141691', 81.72333416633359]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [496, 92]
+  zoom: 83
+- coordinate: !!python/tuple [47, 26.81508209804079]
+  satellite: false
+  sensor: false
+  size: !!python/tuple [734, 183]
+  zoom: 43
+- coordinate: !!python/tuple [-53.197079003247204, -38.23248077993577]
+  satellite: false
+  sensor: false
+  size: !!python/tuple ['502', 16]
+  zoom: 63
+- coordinate: !!python/tuple [-11.883466789075499, 145.45260581249323]
+  satellite: false
+  sensor: false
+  size: !!python/tuple [305, 288]
+  zoom: 128.0
+- coordinate: !!python/tuple [-44.997896329517104, 112.19524243824998]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [-9, 629]
+  zoom: 138
+- coordinate: !!python/tuple [-13.6228391167557, 31.262117558943714]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [607, 165]
+  zoom: '11'
+- coordinate: !!python/tuple [-37.37379070412064, -98.02056423613612]
+  satellite: true
+  sensor: true
+  size: !!python/tuple ['784', 512]
+  zoom: 12
+- coordinate: !!python/tuple ['41.3619965953', 32.21478451849114]
+  satellite: false
+  sensor: false
+  size: !!python/tuple [148, 391]
+  zoom: 167
+- coordinate: !!python/tuple [-84, -74.06037465038402]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [362, 257]
+  zoom: 20
+- coordinate: !!python/tuple [-78.93028544928447, -40.86975457143603]
+  satellite: true
+  sensor: true
+  size: !!python/tuple ['28', 165]
+  zoom: 27
+- coordinate: !!python/tuple [53.274870612069606, -133.68496950810786]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [765, 448]
+  zoom: 162.0
+- coordinate: !!python/tuple [38, -113.40270149079663]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [299, 469]
+  zoom: 86
+- coordinate: !!python/tuple [-25.01904315142147, -177.92385574795347]
+  satellite: true
+  sensor: true
+  size: !!python/tuple [611, 772]
+  zoom: 87.0
+- coordinate: !!python/tuple [-74.56886699892277, -48.122986564379914]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [159, 152]
+  zoom: 189.0
+- coordinate: !!python/tuple [-11.165258418537007, -127.85202715844795]
+  satellite: 'False'
+  sensor: false
+  size: !!python/tuple [48, 122]
+  zoom: 59
+- coordinate: !!python/tuple [86, -75.09121733568425]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [773, 785]
+  zoom: 101
+- coordinate: !!python/tuple ['-61.3742399168', 145.47438082413368]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [725, 457]
+  zoom: 194
+- coordinate: !!python/tuple [69.72163110862002, -154.02587529385158]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [-83, 294]
+  zoom: 68
+- coordinate: !!python/tuple [-39.87649586089662, 39.60995180467705]
+  satellite: 'False'
+  sensor: false
+  size: !!python/tuple [51, 243]
+  zoom: 76
+- coordinate: !!python/tuple [87.24658661834997, -21.24609318561602]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [285, 649]
+  zoom: '118'
+- coordinate: !!python/tuple [-56.39551179638179, -33.75031423451779]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [585, 791]
+  zoom: -67
+- coordinate: !!python/tuple [32.365703459562184, -71.64079235458564]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [534, 273]
+  zoom: -89
+- coordinate: !!python/tuple [86.47653223008518, 136.62745451207445]
+  satellite: false
+  sensor: false
+  size: !!python/tuple ['330', 737]
+  zoom: 2
+- coordinate: !!python/tuple [50.374320719908695, 163.10762328322562]
+  satellite: true
+  sensor: false
+  size: !!python/tuple ['253', 69]
+  zoom: 182
+- coordinate: !!python/tuple [-28, -151.57699701463542]
+  satellite: true
+  sensor: true
+  size: !!python/tuple [334, 532]
+  zoom: 45
+- coordinate: !!python/tuple [-58.591602808761635, -75.39928145512572]
+  satellite: false
+  sensor: false
+  size: !!python/tuple [-473, 648]
+  zoom: 89
+- coordinate: !!python/tuple [74.39585177446011, -30.250220388940676]
+  satellite: true
+  sensor: true
+  size: !!python/tuple [465, 523]
+  zoom: 96.0
+- coordinate: !!python/tuple [47.393245518495604, -139.99181534094137]
+  satellite: 'False'
+  sensor: false
+  size: !!python/tuple [667, 327]
+  zoom: 72
+- coordinate: !!python/tuple [23.289868268981536, -31.540767616489006]
+  satellite: 'False'
+  sensor: false
+  size: !!python/tuple [83, 27]
+  zoom: 115
+- coordinate: !!python/tuple [-11.401186160401409, -45.24609463455462]
+  satellite: 'False'
+  sensor: true
+  size: !!python/tuple [127, 80]
+  zoom: 189
+- coordinate: !!python/tuple [-77.26428707448561, 91.14147880053673]
+  satellite: true
+  sensor: true
+  size: !!python/tuple [794, 99]
+  zoom: '31'
+- coordinate: !!python/tuple [-81.65047441658639, 84.38152871330789]
+  satellite: false
+  sensor: false
+  size: !!python/tuple ['224', 465]
+  zoom: 177
+- coordinate: !!python/tuple [39.97486395058709, 151.03088413980964]
+  satellite: 'False'
+  sensor: true
+  size: !!python/tuple [708, 605]
+  zoom: 113
+- coordinate: !!python/tuple [11.964541171235396, 82.35280682271434]
+  satellite: true
+  sensor: true
+  size: !!python/tuple [-194, 131]
+  zoom: 175
+- coordinate: !!python/tuple ['38.9630701026', 89.34667797970428]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [157, 86]
+  zoom: 167
+- coordinate: !!python/tuple [33.91747369912267, -58.44218122864875]
+  satellite: true
+  sensor: true
+  size: !!python/tuple [470, 571]
+  zoom: '33'
+- coordinate: !!python/tuple [-46.42641437635806, -90.18450230434058]
+  satellite: 'True'
+  sensor: true
+  size: !!python/tuple [74, 25]
+  zoom: 40
+- coordinate: !!python/tuple [-53.1888336536523, -129.77130110459885]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [557, 770]
+  zoom: 169.0
+- coordinate: !!python/tuple [15, -85.34614446133111]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [319, 294]
+  zoom: 153
+- coordinate: !!python/tuple [-89.32249113315395, 92.25064820613176]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [206, 97]
+  zoom: -85
+- coordinate: !!python/tuple [33.19025584208414, -101.03636837116528]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [41, 210]
+  zoom: '193'
+- coordinate: !!python/tuple [80.94680587351965, 148.86899682168394]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [-254, 126]
+  zoom: 30
+- coordinate: !!python/tuple ['-87.5821401966', -58.77111952169642]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [567, 182]
+  zoom: 189
+- coordinate: !!python/tuple [-51.07780238213579, -107.9002929213406]
+  satellite: false
+  sensor: true
+  size: !!python/tuple ['387', 218]
+  zoom: 194
+- coordinate: !!python/tuple [-75.77402646610192, 137.31119438741712]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [461, 171]
+  zoom: -93
+- coordinate: !!python/tuple [-59.36101326765061, 21.8803518299311]
+  satellite: true
+  sensor: false
+  size: !!python/tuple [131.0, 711]
+  zoom: 141
+- coordinate: !!python/tuple [19.651969414816946, -175.91464609563238]
+  satellite: false
+  sensor: true
+  size: !!python/tuple [306, 687]
+  zoom: '149'
+- coordinate: !!python/tuple [-15.727759216780044, -12.39352025401115]
+  satellite: false
+  sensor: false
+  size: !!python/tuple [399.0, 92]
+  zoom: 81
+- coordinate: !!python/tuple [85.68194958067676, -142.91362008368725]
+  satellite: 'False'
+  sensor: false
+  size: !!python/tuple [273, 96]
+  zoom: 102

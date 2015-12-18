@@ -1,0 +1,30 @@
+- green_count:
+  - !!python/tuple [0.2, 160000]
+  - !!python/tuple [0.4, 160000]
+  - !!python/tuple [0.6000000000000001, 160000]
+  - !!python/tuple [0.8, 160000]
+  - !!python/tuple [1.0, 159645]
+  - !!python/tuple [1.2, 150152]
+  - !!python/tuple [1.4000000000000001, 38410]
+  - !!python/tuple [1.6, 1839]
+  - !!python/tuple [1.8, 0]
+  - !!python/tuple [2.0, 0]
+  green_mask_filename: example_map_01b.png
+  loc_nom: Norwich
+  location: !!python/tuple [52.6308859, 1.297355]
+  map_filename: example_map_01a.png
+- green_count:
+  - !!python/tuple [0.2, 160000]
+  - !!python/tuple [0.4, 160000]
+  - !!python/tuple [0.6000000000000001, 160000]
+  - !!python/tuple [0.8, 160000]
+  - !!python/tuple [1.0, 155259]
+  - !!python/tuple [1.2, 63540]
+  - !!python/tuple [1.4000000000000001, 24220]
+  - !!python/tuple [1.6, 8794]
+  - !!python/tuple [1.8, 3362]
+  - !!python/tuple [2.0, 0]
+  green_mask_filename: example_map_02b.png
+  loc_nom: London
+  location: !!python/tuple [51.5073509, -0.1277583]
+  map_filename: example_map_02a.png

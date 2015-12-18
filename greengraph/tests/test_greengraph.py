@@ -5,7 +5,7 @@ from nose.tools import assert_raises, assert_almost_equal, assert_equal, assert_
 import geopy
 import numpy as np
 from ..greengraph import Greengraph
-from generate_random_locations import broken_steps_value
+from generate_fixtures import broken_steps_value
 
 def test_init_type_fail():
     with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'broken_locations_pairs.yaml')) as fixtures_file:
@@ -90,6 +90,7 @@ def test_green_between_steps_fail():
         steps_value = broken_steps_value()
         with assert_raises(TypeError) as exception:
             assert Greengraph('first', 'second').green_between(steps_value)
+
 
 def test_green_between_component():
     with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'random_coordinate_pairs.yaml')) as fixtures_file:
