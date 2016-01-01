@@ -95,3 +95,24 @@ def test_count_green():
                 for threshold, expected_green_count in green_count_values:
                     actual_green_count = green.count_green(threshold)
                     assert_equal(expected_green_count, actual_green_count)
+
+
+def test_show_green():
+    with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'example_images_filelist.yaml')) as fixtures_file:
+        fixtures = yaml.load(fixtures_file)
+        for fixture in fixtures:
+            loc_name = fixture['loc_nom']
+            location = fixture['location']
+            map_filename = fixture['map_filename']
+            green_mask_filename = fixture['green_mask_filename']
+            green_count_values = fixture['green_count']
+            with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'images', map_filename)) as image_file:
+                return_pixels = img.imread(image_file)
+            with open(os.path.join(os.path.dirname(__file__), 'fixtures', 'images', green_mask_filename)) as image_file:
+                expected_green = img.imread(image_file)
+            with patch.object(requests, 'get') as mock_get, patch.object(img, 'imread') as mock_img:
+                mock_img.return_value = return_pixels
+                green = Map(*location)
+                actual_image = green.show_green()
+            actual_green = img.imread(StringIO(actual_image))
+            np.testing.assert_array_equal(actual_green, expected_green)
