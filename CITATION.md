@@ -1,5 +1,5 @@
 Please cite the URL below when referring to this packaged version of
-the Greengraph code.
+the Greengraph code with Joshua D. Foster as the author.
 
 https://github.com/jdfoster/greengraph
 

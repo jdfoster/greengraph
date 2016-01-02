@@ -1,14 +1,21 @@
-from argparse import ArgumentParser, Action
+from argparse import ArgumentParser, Action, RawDescriptionHelpFormatter
 from greengraph import Greengraph
 from matplotlib import pyplot as plt
 
 
 def entry_point():
-    parser = ArgumentParser()
-    parser.add_argument('from_arg', metavar='FROM', type=str)
-    parser.add_argument('to_arg', metavar='TO', type=str)
-    parser.add_argument('dist_file', metavar='OUT', type=str)
-    parser.add_argument('--steps', '-s', type=int, default=20)
+    parser = ArgumentParser(
+        description = 'Generates a graph of the green space between two geographical locations.',
+        epilog = 'Examples:\n greengraph Norwich London NOR-LON.PNG\n greengraph Edinburgh Dundee EDI-DUN.PNG --steps 30\n greengraph Chicago "New York" CHI-NYC.PNG -s 15',
+        formatter_class=RawDescriptionHelpFormatter)
+    parser.add_argument('from_arg', metavar='FROM', type=str,
+                        help='First geographical location should be given using the Latin alphabet with a minimum size of 2 characters. For a location with more than 2 words using quotation marks to denote a single location, e.g. "New York".')
+    parser.add_argument('to_arg', metavar='TO', type=str,
+                        help='Second geographical location, must be different to the argument given as FROM. See FROM for more details.')
+    parser.add_argument('dist_file', metavar='OUT', type=str,
+                        help='Filename for the returned PNG image of the generated graph. Filename needs to have the extension png/PNG.')
+    parser.add_argument('--steps', '-s', type=int, default=20,
+                        help='Number of images to sample between the two locations. The first and last images are taken at the given locations, therefore the minmum value is 2. Default value is 20 steps.')
     arguments = parser.parse_args()
 
     for idx, arg in enumerate([arguments.from_arg, arguments.to_arg, arguments.dist_file]):
